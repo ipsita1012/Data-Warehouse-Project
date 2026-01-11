@@ -1,3 +1,12 @@
+/* 
+==========================================================
+DDL Script:: Create Data Tables for Bronze Layer
+==========================================================
+Script Purpose::
+	This script creates tables in the 'bronze' schema, droppling the existing table if already exists.
+	Run this script to re-define the DDL structure of 'bronze' tables.
+==========================================================
+
 IF OBJECT_ID ('bronze.crm_cust_info', 'U') IS NOT NULL
 	DROP TABLE bronze.crm_cust_info;
 
